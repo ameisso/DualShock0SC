@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71BAFAA11DD8C0FF00CCE924 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BAFAA01DD8C0FF00CCE924 /* AppDelegate.m */; };
+		71BAFAA41DD8C0FF00CCE924 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BAFAA31DD8C0FF00CCE924 /* main.m */; };
+		71BAFAA61DD8C0FF00CCE924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BAFAA51DD8C0FF00CCE924 /* Assets.xcassets */; };
+		71BAFAA91DD8C0FF00CCE924 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71BAFAA71DD8C0FF00CCE924 /* MainMenu.xib */; };
+		71BAFAB41DD8C10000CCE924 /* Dualshock4HIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BAFAB31DD8C10000CCE924 /* Dualshock4HIDTests.m */; };
+		71BAFABF1DD8C10000CCE924 /* Dualshock4HIDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BAFABE1DD8C10000CCE924 /* Dualshock4HIDUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71BAFAB01DD8C10000CCE924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71BAFA941DD8C0FF00CCE924 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71BAFA9B1DD8C0FF00CCE924;
+			remoteInfo = Dualshock4HID;
+		};
+		71BAFABB1DD8C10000CCE924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71BAFA941DD8C0FF00CCE924 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71BAFA9B1DD8C0FF00CCE924;
+			remoteInfo = Dualshock4HID;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71BAFA9C1DD8C0FF00CCE924 /* Dualshock4HID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dualshock4HID.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BAFA9F1DD8C0FF00CCE924 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		71BAFAA01DD8C0FF00CCE924 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		71BAFAA31DD8C0FF00CCE924 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		71BAFAA51DD8C0FF00CCE924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71BAFAA81DD8C0FF00CCE924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		71BAFAAA1DD8C0FF00CCE924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71BAFAAF1DD8C10000CCE924 /* Dualshock4HIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dualshock4HIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BAFAB31DD8C10000CCE924 /* Dualshock4HIDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dualshock4HIDTests.m; sourceTree = "<group>"; };
+		71BAFAB51DD8C10000CCE924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71BAFABA1DD8C10000CCE924 /* Dualshock4HIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dualshock4HIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BAFABE1DD8C10000CCE924 /* Dualshock4HIDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dualshock4HIDUITests.m; sourceTree = "<group>"; };
+		71BAFAC01DD8C10000CCE924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71BAFA991DD8C0FF00CCE924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BAFAAC1DD8C10000CCE924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BAFAB71DD8C10000CCE924 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71BAFA931DD8C0FF00CCE924 = {
+			isa = PBXGroup;
+			children = (
+				71BAFA9E1DD8C0FF00CCE924 /* Dualshock4HID */,
+				71BAFAB21DD8C10000CCE924 /* Dualshock4HIDTests */,
+				71BAFABD1DD8C10000CCE924 /* Dualshock4HIDUITests */,
+				71BAFA9D1DD8C0FF00CCE924 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71BAFA9D1DD8C0FF00CCE924 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71BAFA9C1DD8C0FF00CCE924 /* Dualshock4HID.app */,
+				71BAFAAF1DD8C10000CCE924 /* Dualshock4HIDTests.xctest */,
+				71BAFABA1DD8C10000CCE924 /* Dualshock4HIDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71BAFA9E1DD8C0FF00CCE924 /* Dualshock4HID */ = {
+			isa = PBXGroup;
+			children = (
+				71BAFA9F1DD8C0FF00CCE924 /* AppDelegate.h */,
+				71BAFAA01DD8C0FF00CCE924 /* AppDelegate.m */,
+				71BAFAA51DD8C0FF00CCE924 /* Assets.xcassets */,
+				71BAFAA71DD8C0FF00CCE924 /* MainMenu.xib */,
+				71BAFAAA1DD8C0FF00CCE924 /* Info.plist */,
+				71BAFAA21DD8C0FF00CCE924 /* Supporting Files */,
+			);
+			path = Dualshock4HID;
+			sourceTree = "<group>";
+		};
+		71BAFAA21DD8C0FF00CCE924 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71BAFAA31DD8C0FF00CCE924 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71BAFAB21DD8C10000CCE924 /* Dualshock4HIDTests */ = {
+			isa = PBXGroup;
+			children = (
+				71BAFAB31DD8C10000CCE924 /* Dualshock4HIDTests.m */,
+				71BAFAB51DD8C10000CCE924 /* Info.plist */,
+			);
+			path = Dualshock4HIDTests;
+			sourceTree = "<group>";
+		};
+		71BAFABD1DD8C10000CCE924 /* Dualshock4HIDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				71BAFABE1DD8C10000CCE924 /* Dualshock4HIDUITests.m */,
+				71BAFAC01DD8C10000CCE924 /* Info.plist */,
+			);
+			path = Dualshock4HIDUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71BAFA9B1DD8C0FF00CCE924 /* Dualshock4HID */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71BAFAC31DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "Dualshock4HID" */;
+			buildPhases = (
+				71BAFA981DD8C0FF00CCE924 /* Sources */,
+				71BAFA991DD8C0FF00CCE924 /* Frameworks */,
+				71BAFA9A1DD8C0FF00CCE924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dualshock4HID;
+			productName = Dualshock4HID;
+			productReference = 71BAFA9C1DD8C0FF00CCE924 /* Dualshock4HID.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71BAFAAE1DD8C10000CCE924 /* Dualshock4HIDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71BAFAC61DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "Dualshock4HIDTests" */;
+			buildPhases = (
+				71BAFAAB1DD8C10000CCE924 /* Sources */,
+				71BAFAAC1DD8C10000CCE924 /* Frameworks */,
+				71BAFAAD1DD8C10000CCE924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71BAFAB11DD8C10000CCE924 /* PBXTargetDependency */,
+			);
+			name = Dualshock4HIDTests;
+			productName = Dualshock4HIDTests;
+			productReference = 71BAFAAF1DD8C10000CCE924 /* Dualshock4HIDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		71BAFAB91DD8C10000CCE924 /* Dualshock4HIDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71BAFAC91DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "Dualshock4HIDUITests" */;
+			buildPhases = (
+				71BAFAB61DD8C10000CCE924 /* Sources */,
+				71BAFAB71DD8C10000CCE924 /* Frameworks */,
+				71BAFAB81DD8C10000CCE924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71BAFABC1DD8C10000CCE924 /* PBXTargetDependency */,
+			);
+			name = Dualshock4HIDUITests;
+			productName = Dualshock4HIDUITests;
+			productReference = 71BAFABA1DD8C10000CCE924 /* Dualshock4HIDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71BAFA941DD8C0FF00CCE924 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Antoine;
+				TargetAttributes = {
+					71BAFA9B1DD8C0FF00CCE924 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					71BAFAAE1DD8C10000CCE924 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 71BAFA9B1DD8C0FF00CCE924;
+					};
+					71BAFAB91DD8C10000CCE924 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 71BAFA9B1DD8C0FF00CCE924;
+					};
+				};
+			};
+			buildConfigurationList = 71BAFA971DD8C0FF00CCE924 /* Build configuration list for PBXProject "Dualshock4HID" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71BAFA931DD8C0FF00CCE924;
+			productRefGroup = 71BAFA9D1DD8C0FF00CCE924 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71BAFA9B1DD8C0FF00CCE924 /* Dualshock4HID */,
+				71BAFAAE1DD8C10000CCE924 /* Dualshock4HIDTests */,
+				71BAFAB91DD8C10000CCE924 /* Dualshock4HIDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71BAFA9A1DD8C0FF00CCE924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BAFAA61DD8C0FF00CCE924 /* Assets.xcassets in Resources */,
+				71BAFAA91DD8C0FF00CCE924 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BAFAAD1DD8C10000CCE924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BAFAB81DD8C10000CCE924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71BAFA981DD8C0FF00CCE924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BAFAA41DD8C0FF00CCE924 /* main.m in Sources */,
+				71BAFAA11DD8C0FF00CCE924 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BAFAAB1DD8C10000CCE924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BAFAB41DD8C10000CCE924 /* Dualshock4HIDTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BAFAB61DD8C10000CCE924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BAFABF1DD8C10000CCE924 /* Dualshock4HIDUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71BAFAB11DD8C10000CCE924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71BAFA9B1DD8C0FF00CCE924 /* Dualshock4HID */;
+			targetProxy = 71BAFAB01DD8C10000CCE924 /* PBXContainerItemProxy */;
+		};
+		71BAFABC1DD8C10000CCE924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71BAFA9B1DD8C0FF00CCE924 /* Dualshock4HID */;
+			targetProxy = 71BAFABB1DD8C10000CCE924 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71BAFAA71DD8C0FF00CCE924 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71BAFAA81DD8C0FF00CCE924 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71BAFAC11DD8C10000CCE924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		71BAFAC21DD8C10000CCE924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		71BAFAC41DD8C10000CCE924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Dualshock4HID/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = anomes.Dualshock4HID;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		71BAFAC51DD8C10000CCE924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Dualshock4HID/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = anomes.Dualshock4HID;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		71BAFAC71DD8C10000CCE924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Dualshock4HIDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = anomes.Dualshock4HIDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dualshock4HID.app/Contents/MacOS/Dualshock4HID";
+			};
+			name = Debug;
+		};
+		71BAFAC81DD8C10000CCE924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Dualshock4HIDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = anomes.Dualshock4HIDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dualshock4HID.app/Contents/MacOS/Dualshock4HID";
+			};
+			name = Release;
+		};
+		71BAFACA1DD8C10000CCE924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Dualshock4HIDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = anomes.Dualshock4HIDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Dualshock4HID;
+			};
+			name = Debug;
+		};
+		71BAFACB1DD8C10000CCE924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Dualshock4HIDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = anomes.Dualshock4HIDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Dualshock4HID;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71BAFA971DD8C0FF00CCE924 /* Build configuration list for PBXProject "Dualshock4HID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BAFAC11DD8C10000CCE924 /* Debug */,
+				71BAFAC21DD8C10000CCE924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71BAFAC31DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "Dualshock4HID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BAFAC41DD8C10000CCE924 /* Debug */,
+				71BAFAC51DD8C10000CCE924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71BAFAC61DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "Dualshock4HIDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BAFAC71DD8C10000CCE924 /* Debug */,
+				71BAFAC81DD8C10000CCE924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71BAFAC91DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "Dualshock4HIDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BAFACA1DD8C10000CCE924 /* Debug */,
+				71BAFACB1DD8C10000CCE924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71BAFA941DD8C0FF00CCE924 /* Project object */;
+}
