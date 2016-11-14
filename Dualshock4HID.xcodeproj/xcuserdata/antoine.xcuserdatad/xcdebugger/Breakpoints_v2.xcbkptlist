@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dualshock4HID/AppDelegate.m"
-            timestampString = "500778432.145292"
+            timestampString = "500780872.219948"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "445"
-            endingLineNumber = "445"
+            startingLineNumber = "494"
+            endingLineNumber = "494"
             landmarkName = "-load"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dualshock4HID/AppDelegate.m"
-            timestampString = "500778432.145292"
+            timestampString = "500780872.219948"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "469"
-            endingLineNumber = "469"
+            startingLineNumber = "518"
+            endingLineNumber = "518"
             landmarkName = "@implementation AppDelegate"
             landmarkType = "3">
          </BreakpointContent>

@@ -1130,7 +1130,7 @@
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vqy-rz-l3y">
                         <rect key="frame" x="425" y="508" width="48" height="48"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSBonjour" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="qA6-jV-UvO">
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="unlock" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="qA6-jV-UvO">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1147,7 +1147,6 @@
         <image name="L1" width="200" height="120"/>
         <image name="L2" width="200" height="150"/>
         <image name="LHat" width="50" height="50"/>
-        <image name="NSBonjour" width="32" height="32"/>
         <image name="NSStatusNone" width="16" height="16"/>
         <image name="NSStatusUnavailable" width="16" height="16"/>
         <image name="R1" width="200" height="120"/>
@@ -1161,5 +1160,6 @@
         <image name="square" width="37.5" height="37.5"/>
         <image name="top" width="50" height="50"/>
         <image name="triangle" width="37.5" height="37.5"/>
+        <image name="unlock" width="200" height="200"/>
     </resources>
 </document>

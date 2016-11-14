@@ -94,6 +94,8 @@
     IBOutlet NSImageView *LHatJoystickImageView;
     IBOutlet NSImageView *RHatJoystickImageView;
     
+    IBOutlet NSButton *lockButton;
+    
     BOOL isTopPressed;
     BOOL isLeftPressed;
     BOOL isBottomPressed;

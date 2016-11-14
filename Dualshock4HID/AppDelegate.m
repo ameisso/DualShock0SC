@@ -21,6 +21,56 @@
     [self load];
 }
 
+- (IBAction)lockButtonAction:(NSButton *)sender
+{
+    if( sender.state == 0 )
+    {
+        [lockButton setImage:[NSImage imageNamed:@"unlock"]];
+    }
+    else
+    {
+        [lockButton setImage:[NSImage imageNamed:@"lock"]];
+    }
+    [self updateTextField:triangleTextField withLock:sender.state];
+    [self updateTextField:circleTextField withLock:sender.state];
+    [self updateTextField:crossTextField withLock:sender.state];
+    [self updateTextField:squareTextField withLock:sender.state];
+    
+    [self updateTextField:topTextField withLock:sender.state];
+    [self updateTextField:rightTextField withLock:sender.state];
+    [self updateTextField:bottomTextField withLock:sender.state];
+    [self updateTextField:leftTextField withLock:sender.state];
+    
+    [self updateTextField:L1TextField withLock:sender.state];
+    [self updateTextField:L2TextField withLock:sender.state];
+    [self updateTextField:R1TextField withLock:sender.state];
+    [self updateTextField:R2TextField withLock:sender.state];
+    
+    [self updateTextField:LeftHatButtonTextField withLock:sender.state];
+    [self updateTextField:RightHatButtonTextField withLock:sender.state];
+    
+    [self updateTextField:L2JoysticktextField withLock:sender.state];
+    [self updateTextField:R2JoysticktextField withLock:sender.state];
+    
+    [self updateTextField:LHatJoysticktextField withLock:sender.state];
+    [self updateTextField:RHatJoysticktextField withLock:sender.state];
+    
+}
+
+- (void)updateTextField:(NSTextField *)field withLock:(BOOL)isLocked
+{
+    if( isLocked )
+    {
+        [field setEditable:NO];
+        [field setBackgroundColor:NSColor.lightGrayColor];
+        
+    }
+    else
+    {
+        [field setEditable:YES];
+        [field setBackgroundColor:NSColor.whiteColor];
+    }
+}
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
 }
@@ -156,7 +206,6 @@
             [self sendMessageWithAddress:L2TextField.stringValue andValue:1];
             break;
             
-            
         case R1_BUTTON:
             [R1ImageView setImage:[self pressedImage]];
             [self sendMessageWithAddress:R1TextField.stringValue andValue:1];
@@ -258,7 +307,7 @@
 }
 
 - (void) ddhidJoystick: (DDHidJoystick *) joystick stick: (unsigned) stick otherAxis: (unsigned) otherAxis valueChanged: (int) value;
-{    
+{
     BOOL shouldSendRightJoystick = NO;
     float mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:0 outMax:1];
     switch (otherAxis)
