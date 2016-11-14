@@ -55,16 +55,16 @@
 
 /* Begin PBXFileReference section */
 		714BA6781DD92F8A008ECBC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		71BAFA9C1DD8C0FF00CCE924 /* Dualshock4HID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dualshock4HID.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BAFA9C1DD8C0FF00CCE924 /* DualshockOSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DualshockOSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BAFA9F1DD8C0FF00CCE924 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71BAFAA01DD8C0FF00CCE924 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		71BAFAA31DD8C0FF00CCE924 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71BAFAA81DD8C0FF00CCE924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		71BAFAAA1DD8C0FF00CCE924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71BAFAAF1DD8C10000CCE924 /* Dualshock4HIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dualshock4HIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BAFAAF1DD8C10000CCE924 /* DualshockOSCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DualshockOSCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BAFAB31DD8C10000CCE924 /* Dualshock4HIDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dualshock4HIDTests.m; sourceTree = "<group>"; };
 		71BAFAB51DD8C10000CCE924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71BAFABA1DD8C10000CCE924 /* Dualshock4HIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dualshock4HIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BAFABA1DD8C10000CCE924 /* DualshockOSCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DualshockOSCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BAFABE1DD8C10000CCE924 /* Dualshock4HIDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dualshock4HIDUITests.m; sourceTree = "<group>"; };
 		71BAFAC01DD8C10000CCE924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71BAFACC1DD8C3D900CCE924 /* DDHidLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DDHidLib.framework; sourceTree = "<group>"; };
@@ -113,9 +113,9 @@
 		71BAFA9D1DD8C0FF00CCE924 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				71BAFA9C1DD8C0FF00CCE924 /* Dualshock4HID.app */,
-				71BAFAAF1DD8C10000CCE924 /* Dualshock4HIDTests.xctest */,
-				71BAFABA1DD8C10000CCE924 /* Dualshock4HIDUITests.xctest */,
+				71BAFA9C1DD8C0FF00CCE924 /* DualshockOSC.app */,
+				71BAFAAF1DD8C10000CCE924 /* DualshockOSCTests.xctest */,
+				71BAFABA1DD8C10000CCE924 /* DualshockOSCUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,9 +165,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		71BAFA9B1DD8C0FF00CCE924 /* Dualshock4HID */ = {
+		71BAFA9B1DD8C0FF00CCE924 /* DualshockOSC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 71BAFAC31DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "Dualshock4HID" */;
+			buildConfigurationList = 71BAFAC31DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "DualshockOSC" */;
 			buildPhases = (
 				71BAFA981DD8C0FF00CCE924 /* Sources */,
 				71BAFA991DD8C0FF00CCE924 /* Frameworks */,
@@ -178,14 +178,14 @@
 			);
 			dependencies = (
 			);
-			name = Dualshock4HID;
+			name = DualshockOSC;
 			productName = Dualshock4HID;
-			productReference = 71BAFA9C1DD8C0FF00CCE924 /* Dualshock4HID.app */;
+			productReference = 71BAFA9C1DD8C0FF00CCE924 /* DualshockOSC.app */;
 			productType = "com.apple.product-type.application";
 		};
-		71BAFAAE1DD8C10000CCE924 /* Dualshock4HIDTests */ = {
+		71BAFAAE1DD8C10000CCE924 /* DualshockOSCTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 71BAFAC61DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "Dualshock4HIDTests" */;
+			buildConfigurationList = 71BAFAC61DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "DualshockOSCTests" */;
 			buildPhases = (
 				71BAFAAB1DD8C10000CCE924 /* Sources */,
 				71BAFAAC1DD8C10000CCE924 /* Frameworks */,
@@ -196,14 +196,14 @@
 			dependencies = (
 				71BAFAB11DD8C10000CCE924 /* PBXTargetDependency */,
 			);
-			name = Dualshock4HIDTests;
+			name = DualshockOSCTests;
 			productName = Dualshock4HIDTests;
-			productReference = 71BAFAAF1DD8C10000CCE924 /* Dualshock4HIDTests.xctest */;
+			productReference = 71BAFAAF1DD8C10000CCE924 /* DualshockOSCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		71BAFAB91DD8C10000CCE924 /* Dualshock4HIDUITests */ = {
+		71BAFAB91DD8C10000CCE924 /* DualshockOSCUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 71BAFAC91DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "Dualshock4HIDUITests" */;
+			buildConfigurationList = 71BAFAC91DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "DualshockOSCUITests" */;
 			buildPhases = (
 				71BAFAB61DD8C10000CCE924 /* Sources */,
 				71BAFAB71DD8C10000CCE924 /* Frameworks */,
@@ -214,9 +214,9 @@
 			dependencies = (
 				71BAFABC1DD8C10000CCE924 /* PBXTargetDependency */,
 			);
-			name = Dualshock4HIDUITests;
+			name = DualshockOSCUITests;
 			productName = Dualshock4HIDUITests;
-			productReference = 71BAFABA1DD8C10000CCE924 /* Dualshock4HIDUITests.xctest */;
+			productReference = 71BAFABA1DD8C10000CCE924 /* DualshockOSCUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -244,7 +244,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 71BAFA971DD8C0FF00CCE924 /* Build configuration list for PBXProject "Dualshock4HID" */;
+			buildConfigurationList = 71BAFA971DD8C0FF00CCE924 /* Build configuration list for PBXProject "DualshockOSC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -257,9 +257,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				71BAFA9B1DD8C0FF00CCE924 /* Dualshock4HID */,
-				71BAFAAE1DD8C10000CCE924 /* Dualshock4HIDTests */,
-				71BAFAB91DD8C10000CCE924 /* Dualshock4HIDUITests */,
+				71BAFA9B1DD8C0FF00CCE924 /* DualshockOSC */,
+				71BAFAAE1DD8C10000CCE924 /* DualshockOSCTests */,
+				71BAFAB91DD8C10000CCE924 /* DualshockOSCUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -321,12 +321,12 @@
 /* Begin PBXTargetDependency section */
 		71BAFAB11DD8C10000CCE924 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 71BAFA9B1DD8C0FF00CCE924 /* Dualshock4HID */;
+			target = 71BAFA9B1DD8C0FF00CCE924 /* DualshockOSC */;
 			targetProxy = 71BAFAB01DD8C10000CCE924 /* PBXContainerItemProxy */;
 		};
 		71BAFABC1DD8C10000CCE924 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 71BAFA9B1DD8C0FF00CCE924 /* Dualshock4HID */;
+			target = 71BAFA9B1DD8C0FF00CCE924 /* DualshockOSC */;
 			targetProxy = 71BAFABB1DD8C10000CCE924 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -471,7 +471,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anomes.Dualshock4HIDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dualshock4HID.app/Contents/MacOS/Dualshock4HID";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DualshockOSC.app/Contents/MacOS/DualshockOSC";
 			};
 			name = Debug;
 		};
@@ -484,7 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anomes.Dualshock4HIDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dualshock4HID.app/Contents/MacOS/Dualshock4HID";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DualshockOSC.app/Contents/MacOS/DualshockOSC";
 			};
 			name = Release;
 		};
@@ -515,7 +515,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		71BAFA971DD8C0FF00CCE924 /* Build configuration list for PBXProject "Dualshock4HID" */ = {
+		71BAFA971DD8C0FF00CCE924 /* Build configuration list for PBXProject "DualshockOSC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				71BAFAC11DD8C10000CCE924 /* Debug */,
@@ -524,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		71BAFAC31DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "Dualshock4HID" */ = {
+		71BAFAC31DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "DualshockOSC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				71BAFAC41DD8C10000CCE924 /* Debug */,
@@ -533,7 +533,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		71BAFAC61DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "Dualshock4HIDTests" */ = {
+		71BAFAC61DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "DualshockOSCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				71BAFAC71DD8C10000CCE924 /* Debug */,
@@ -542,7 +542,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		71BAFAC91DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "Dualshock4HIDUITests" */ = {
+		71BAFAC91DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "DualshockOSCUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				71BAFACA1DD8C10000CCE924 /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "71BAFA9B1DD8C0FF00CCE924"
-               BuildableName = "Dualshock4HID.app"
-               BlueprintName = "Dualshock4HID"
-               ReferencedContainer = "container:Dualshock4HID.xcodeproj">
+               BuildableName = "DualshockOSC.app"
+               BlueprintName = "DualshockOSC"
+               ReferencedContainer = "container:DualshockOSC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "71BAFAAE1DD8C10000CCE924"
-               BuildableName = "Dualshock4HIDTests.xctest"
-               BlueprintName = "Dualshock4HIDTests"
-               ReferencedContainer = "container:Dualshock4HID.xcodeproj">
+               BuildableName = "DualshockOSCTests.xctest"
+               BlueprintName = "DualshockOSCTests"
+               ReferencedContainer = "container:DualshockOSC.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "71BAFAB91DD8C10000CCE924"
-               BuildableName = "Dualshock4HIDUITests.xctest"
-               BlueprintName = "Dualshock4HIDUITests"
-               ReferencedContainer = "container:Dualshock4HID.xcodeproj">
+               BuildableName = "DualshockOSCUITests.xctest"
+               BlueprintName = "DualshockOSCUITests"
+               ReferencedContainer = "container:DualshockOSC.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "71BAFA9B1DD8C0FF00CCE924"
-            BuildableName = "Dualshock4HID.app"
-            BlueprintName = "Dualshock4HID"
-            ReferencedContainer = "container:Dualshock4HID.xcodeproj">
+            BuildableName = "DualshockOSC.app"
+            BlueprintName = "DualshockOSC"
+            ReferencedContainer = "container:DualshockOSC.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "71BAFA9B1DD8C0FF00CCE924"
-            BuildableName = "Dualshock4HID.app"
-            BlueprintName = "Dualshock4HID"
-            ReferencedContainer = "container:Dualshock4HID.xcodeproj">
+            BuildableName = "DualshockOSC.app"
+            BlueprintName = "DualshockOSC"
+            ReferencedContainer = "container:DualshockOSC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "71BAFA9B1DD8C0FF00CCE924"
-            BuildableName = "Dualshock4HID.app"
-            BlueprintName = "Dualshock4HID"
-            ReferencedContainer = "container:Dualshock4HID.xcodeproj">
+            BuildableName = "DualshockOSC.app"
+            BlueprintName = "DualshockOSC"
+            ReferencedContainer = "container:DualshockOSC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
