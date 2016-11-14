@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		714BA6791DD92F8A008ECBC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714BA6781DD92F8A008ECBC9 /* Assets.xcassets */; };
 		71BAFAA11DD8C0FF00CCE924 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BAFAA01DD8C0FF00CCE924 /* AppDelegate.m */; };
 		71BAFAA41DD8C0FF00CCE924 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BAFAA31DD8C0FF00CCE924 /* main.m */; };
-		71BAFAA61DD8C0FF00CCE924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BAFAA51DD8C0FF00CCE924 /* Assets.xcassets */; };
 		71BAFAA91DD8C0FF00CCE924 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71BAFAA71DD8C0FF00CCE924 /* MainMenu.xib */; };
 		71BAFAB41DD8C10000CCE924 /* Dualshock4HIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BAFAB31DD8C10000CCE924 /* Dualshock4HIDTests.m */; };
 		71BAFABF1DD8C10000CCE924 /* Dualshock4HIDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BAFABE1DD8C10000CCE924 /* Dualshock4HIDUITests.m */; };
+		71BAFACD1DD8C3D900CCE924 /* DDHidLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BAFACC1DD8C3D900CCE924 /* DDHidLib.framework */; };
+		71BAFAD01DD8C4BF00CCE924 /* DDHidLib.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71BAFACC1DD8C3D900CCE924 /* DDHidLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		71BAFAD21DD8D1EF00CCE924 /* VVOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BAFAD11DD8D1EF00CCE924 /* VVOSC.framework */; };
+		71BAFAD31DD8D1F500CCE924 /* VVOSC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71BAFAD11DD8D1EF00CCE924 /* VVOSC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		71BAFAD51DD8D23B00CCE924 /* VVBasics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BAFAD41DD8D23B00CCE924 /* VVBasics.framework */; };
+		71BAFAD61DD8D24500CCE924 /* VVBasics.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71BAFAD41DD8D23B00CCE924 /* VVBasics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,12 +38,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		71BAFACF1DD8C4B500CCE924 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				71BAFAD01DD8C4BF00CCE924 /* DDHidLib.framework in CopyFiles */,
+				71BAFAD61DD8D24500CCE924 /* VVBasics.framework in CopyFiles */,
+				71BAFAD31DD8D1F500CCE924 /* VVOSC.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		714BA6781DD92F8A008ECBC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71BAFA9C1DD8C0FF00CCE924 /* Dualshock4HID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dualshock4HID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BAFA9F1DD8C0FF00CCE924 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71BAFAA01DD8C0FF00CCE924 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		71BAFAA31DD8C0FF00CCE924 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		71BAFAA51DD8C0FF00CCE924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71BAFAA81DD8C0FF00CCE924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		71BAFAAA1DD8C0FF00CCE924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71BAFAAF1DD8C10000CCE924 /* Dualshock4HIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dualshock4HIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +67,9 @@
 		71BAFABA1DD8C10000CCE924 /* Dualshock4HIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dualshock4HIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BAFABE1DD8C10000CCE924 /* Dualshock4HIDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dualshock4HIDUITests.m; sourceTree = "<group>"; };
 		71BAFAC01DD8C10000CCE924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71BAFACC1DD8C3D900CCE924 /* DDHidLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DDHidLib.framework; sourceTree = "<group>"; };
+		71BAFAD11DD8D1EF00CCE924 /* VVOSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VVOSC.framework; sourceTree = "<group>"; };
+		71BAFAD41DD8D23B00CCE924 /* VVBasics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VVBasics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71BAFAD21DD8D1EF00CCE924 /* VVOSC.framework in Frameworks */,
+				71BAFAD51DD8D23B00CCE924 /* VVBasics.framework in Frameworks */,
+				71BAFACD1DD8C3D900CCE924 /* DDHidLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,8 +125,10 @@
 			children = (
 				71BAFA9F1DD8C0FF00CCE924 /* AppDelegate.h */,
 				71BAFAA01DD8C0FF00CCE924 /* AppDelegate.m */,
-				71BAFAA51DD8C0FF00CCE924 /* Assets.xcassets */,
 				71BAFAA71DD8C0FF00CCE924 /* MainMenu.xib */,
+				71BAFAD41DD8D23B00CCE924 /* VVBasics.framework */,
+				71BAFAD11DD8D1EF00CCE924 /* VVOSC.framework */,
+				71BAFACC1DD8C3D900CCE924 /* DDHidLib.framework */,
 				71BAFAAA1DD8C0FF00CCE924 /* Info.plist */,
 				71BAFAA21DD8C0FF00CCE924 /* Supporting Files */,
 			);
@@ -109,6 +138,7 @@
 		71BAFAA21DD8C0FF00CCE924 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				714BA6781DD92F8A008ECBC9 /* Assets.xcassets */,
 				71BAFAA31DD8C0FF00CCE924 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -142,6 +172,7 @@
 				71BAFA981DD8C0FF00CCE924 /* Sources */,
 				71BAFA991DD8C0FF00CCE924 /* Frameworks */,
 				71BAFA9A1DD8C0FF00CCE924 /* Resources */,
+				71BAFACF1DD8C4B500CCE924 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -238,7 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71BAFAA61DD8C0FF00CCE924 /* Assets.xcassets in Resources */,
+				714BA6791DD92F8A008ECBC9 /* Assets.xcassets in Resources */,
 				71BAFAA91DD8C0FF00CCE924 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +435,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dualshock4HID",
+				);
 				INFOPLIST_FILE = Dualshock4HID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anomes.Dualshock4HID;
@@ -416,6 +451,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dualshock4HID",
+				);
 				INFOPLIST_FILE = Dualshock4HID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anomes.Dualshock4HID;
@@ -492,6 +531,7 @@
 				71BAFAC51DD8C10000CCE924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71BAFAC61DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "Dualshock4HIDTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +540,7 @@
 				71BAFAC81DD8C10000CCE924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71BAFAC91DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "Dualshock4HIDUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +549,7 @@
 				71BAFACB1DD8C10000CCE924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
