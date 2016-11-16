@@ -9,6 +9,15 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    [self scan:nil];
+    [self createOSC];
+    [self load];
+    leftJoystickSize = NSZeroSize;
+    rightJoystickSize = NSZeroSize;
+}
+
+- (IBAction)scan:(id)sender
+{
     joysticks = [DDHidJoystick allJoysticks];
     [joysticks makeObjectsPerformSelector: @selector(setDelegate:) withObject: self];
     for( DDHidJoystick *joystick in joysticks )
@@ -16,9 +25,7 @@
         NSLog(@"%@ joysticks %d buttons %d",joystick.productName,joystick.countOfSticks,joystick.numberOfButtons);
         [joystick startListening];
     }
-    
-    [self createOSC];
-    [self load];
+    [self oscOutputsChangedNotification:nil];
 }
 
 - (IBAction)lockButtonAction:(NSButton *)sender

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		714BA6791DD92F8A008ECBC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714BA6781DD92F8A008ECBC9 /* Assets.xcassets */; };
+		719935CD1DDA130700AEEC79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719935CC1DDA130700AEEC79 /* Assets.xcassets */; };
 		71BAFAA11DD8C0FF00CCE924 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BAFAA01DD8C0FF00CCE924 /* AppDelegate.m */; };
 		71BAFAA41DD8C0FF00CCE924 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BAFAA31DD8C0FF00CCE924 /* main.m */; };
 		71BAFAA91DD8C0FF00CCE924 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71BAFAA71DD8C0FF00CCE924 /* MainMenu.xib */; };
@@ -54,7 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		714BA6781DD92F8A008ECBC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		719935CC1DDA130700AEEC79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71BAFA9C1DD8C0FF00CCE924 /* DualshockOSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DualshockOSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BAFA9F1DD8C0FF00CCE924 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71BAFAA01DD8C0FF00CCE924 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		71BAFAA21DD8C0FF00CCE924 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				714BA6781DD92F8A008ECBC9 /* Assets.xcassets */,
+				719935CC1DDA130700AEEC79 /* Assets.xcassets */,
 				71BAFAA31DD8C0FF00CCE924 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -269,7 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				714BA6791DD92F8A008ECBC9 /* Assets.xcassets in Resources */,
+				719935CD1DDA130700AEEC79 /* Assets.xcassets in Resources */,
 				71BAFAA91DD8C0FF00CCE924 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
