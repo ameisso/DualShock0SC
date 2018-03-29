@@ -177,6 +177,16 @@
     [oscMessage addFloat:yValue];
     [outPort sendThisMessage:oscMessage];
     
+    NSString *xAddress = [NSString stringWithFormat:@"%@/x",address];
+    OSCMessage *xMessage = [OSCMessage createWithAddress:xAddress];
+    [xMessage addFloat:xValue];
+    [outPort sendThisMessage:xMessage];
+    
+    NSString *yAddress = [NSString stringWithFormat:@"%@/y",address];
+    OSCMessage *yMessage = [OSCMessage createWithAddress:yAddress];
+    [yMessage addFloat:yValue];
+    [outPort sendThisMessage:yMessage];
+    [self updateJoysticksImages];
     
 }
 
