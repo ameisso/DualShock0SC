@@ -15,7 +15,6 @@
     leftJoystickSize = NSZeroSize;
     rightJoystickSize = NSZeroSize;
     joystickUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/60.0 target:self selector:@selector(updateJoysticks:) userInfo:nil repeats:YES];
-    self.sendJoysticksWithTimer = YES;
 }
 
 - (void)dealloc
@@ -105,6 +104,10 @@
     // Insert code here to tear down your application
 }
 
+- (float)getJoystickSensivity
+{
+    return [JoystickSensivityTextField floatValue];
+}
 #pragma mark OSC
 - (void)createOSC
 {
@@ -315,7 +318,7 @@
 
 - (void) ddhidJoystick: (DDHidJoystick *)  joystick stick: (unsigned) stick xChanged: (int) value
 {
-    float mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:-1 outMax:1];
+    float mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:-self.getJoystickSensivity outMax:self.getJoystickSensivity];
     leftJoystickSize.width = mappedValue;
     if( ! self.sendJoysticksWithTimer )
     {
@@ -325,7 +328,7 @@
 
 - (void) ddhidJoystick: (DDHidJoystick *)  joystick stick: (unsigned) stick yChanged: (int) value
 {
-    float mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:1 outMax:-1];
+    float mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:self.getJoystickSensivity outMax:-self.getJoystickSensivity];
     leftJoystickSize.height = mappedValue;
     if( ! self.sendJoysticksWithTimer )
     {
@@ -362,12 +365,12 @@
             [self sendMessageWithAddress:R2JoysticktextField.stringValue andFloatValue:mappedValue];
             break;
         case RIGHT_JOYSTICK_X:
-            mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:-1 outMax:1];
+            mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:-self.getJoystickSensivity outMax:self.getJoystickSensivity];
             rightJoystickSize.width = mappedValue;
             shouldSendRightJoystick = YES;
             break;
         case RIGHT_JOYSTICK_Y:
-            mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:1 outMax:-1];
+            mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:self.getJoystickSensivity outMax:-self.getJoystickSensivity];
             rightJoystickSize.height = mappedValue;
             shouldSendRightJoystick = YES;
             break;
@@ -515,6 +518,9 @@
     [[NSUserDefaults standardUserDefaults] setObject:LHatJoysticktextField.stringValue forKey:@"LHatJoysticktextField"];
     [[NSUserDefaults standardUserDefaults] setObject:RHatJoysticktextField.stringValue forKey:@"RHatJoysticktextField"];
     
+     [[NSUserDefaults standardUserDefaults] setObject:@(_sendJoysticksWithTimer) forKey:@"sendJoysticksWithTimer"];
+    [[NSUserDefaults standardUserDefaults] setObject:@(JoystickSensivityTextField.floatValue) forKey:@"joystickSensivity"];
+    
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
@@ -543,6 +549,9 @@
     
     LHatJoysticktextField.stringValue = [[NSUserDefaults standardUserDefaults] stringForKey:@"LHatJoysticktextField"];
     RHatJoysticktextField.stringValue = [[NSUserDefaults standardUserDefaults] stringForKey:@"RHatJoysticktextField"];
+    
+    self.sendJoysticksWithTimer =  [[[NSUserDefaults standardUserDefaults] objectForKey:@"sendJoysticksWithTimer"] boolValue];
+    JoystickSensivityTextField.floatValue = [[[NSUserDefaults standardUserDefaults] objectForKey:@"joystickSensivity"] floatValue];
 }
 
 

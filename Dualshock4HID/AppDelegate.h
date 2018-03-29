@@ -67,6 +67,7 @@
     
     IBOutlet NSTextField *LHatJoysticktextField;
     IBOutlet NSTextField *RHatJoysticktextField;
+    IBOutlet NSTextField *JoystickSensivityTextField;
     
     IBOutlet NSImageView *outPortImageView;
     
