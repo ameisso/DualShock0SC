@@ -103,6 +103,9 @@
     
     NSSize leftJoystickSize;
     NSSize rightJoystickSize;
+    
+    NSTimer *joystickUpdateTimer;
+    BOOL sendJoysticksWithTimer;
 }
 
 - (void) ddhidJoystick: (DDHidJoystick *)  joystick stick: (unsigned) stick xChanged: (int) value;

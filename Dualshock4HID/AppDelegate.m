@@ -14,6 +14,29 @@
     [self load];
     leftJoystickSize = NSZeroSize;
     rightJoystickSize = NSZeroSize;
+    joystickUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/60.0 target:self selector:@selector(updateJoysticks:) userInfo:nil repeats:YES];
+    sendJoysticksWithTimer = YES;
+}
+
+- (void)dealloc
+{
+    [joystickUpdateTimer invalidate];
+    joystickUpdateTimer = nil;
+}
+
+- (void) updateJoysticks:(NSTimer *)timer
+{
+    if( sendJoysticksWithTimer )
+    {
+        if( fabs(leftJoystickSize.width) > 0.1 || fabs(leftJoystickSize.height) > 0.1 )
+        {
+            [self sendMessageWithAddress:LHatJoysticktextField.stringValue XValue:leftJoystickSize.width andYValue:leftJoystickSize.height];
+        }
+        if( fabs(rightJoystickSize.width) > 0.1 || fabs(rightJoystickSize.height) > 0.1 )
+        {
+            [self sendMessageWithAddress:RHatJoysticktextField.stringValue XValue:rightJoystickSize.width andYValue:rightJoystickSize.height];
+        }
+    }
 }
 
 - (IBAction)scan:(id)sender
@@ -151,16 +174,7 @@
     [oscMessage addFloat:yValue];
     [outPort sendThisMessage:oscMessage];
     
-    NSString *xAddress = [NSString stringWithFormat:@"%@/x",address];
-    OSCMessage *xMessage = [OSCMessage createWithAddress:xAddress];
-    [xMessage addFloat:xValue];
-    [outPort sendThisMessage:xMessage];
     
-    NSString *yAddress = [NSString stringWithFormat:@"%@/y",address];
-    OSCMessage *yMessage = [OSCMessage createWithAddress:yAddress];
-    [yMessage addFloat:yValue];
-    [outPort sendThisMessage:yMessage];
-    [self updateJoysticksImages];
 }
 
 #pragma mark JOYSTICKS
@@ -301,16 +315,22 @@
 
 - (void) ddhidJoystick: (DDHidJoystick *)  joystick stick: (unsigned) stick xChanged: (int) value
 {
-    float mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:0 outMax:1];
+    float mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:-1 outMax:1];
     leftJoystickSize.width = mappedValue;
-    [self sendMessageWithAddress:LHatJoysticktextField.stringValue XValue:leftJoystickSize.width andYValue:leftJoystickSize.height];
+    if( ! sendJoysticksWithTimer )
+    {
+        [self sendMessageWithAddress:LHatJoysticktextField.stringValue XValue:leftJoystickSize.width andYValue:leftJoystickSize.height];
+    }
 }
 
 - (void) ddhidJoystick: (DDHidJoystick *)  joystick stick: (unsigned) stick yChanged: (int) value
 {
-    float mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:0 outMax:1];
+    float mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:1 outMax:-1];
     leftJoystickSize.height = mappedValue;
-    [self sendMessageWithAddress:LHatJoysticktextField.stringValue XValue:leftJoystickSize.width andYValue:leftJoystickSize.height];
+    if( ! sendJoysticksWithTimer )
+    {
+        [self sendMessageWithAddress:LHatJoysticktextField.stringValue XValue:leftJoystickSize.width andYValue:leftJoystickSize.height];
+    }
 }
 
 - (void) ddhidJoystick: (DDHidJoystick *) joystick stick: (unsigned) stick otherAxis: (unsigned) otherAxis valueChanged: (int) value;
@@ -342,10 +362,12 @@
             [self sendMessageWithAddress:R2JoysticktextField.stringValue andFloatValue:mappedValue];
             break;
         case RIGHT_JOYSTICK_X:
+            mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:-1 outMax:1];
             rightJoystickSize.width = mappedValue;
             shouldSendRightJoystick = YES;
             break;
         case RIGHT_JOYSTICK_Y:
+            mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:1 outMax:-1];
             rightJoystickSize.height = mappedValue;
             shouldSendRightJoystick = YES;
             break;
@@ -354,7 +376,7 @@
         default:
             break;
     }
-    if(shouldSendRightJoystick)
+    if( shouldSendRightJoystick && ! sendJoysticksWithTimer )
     {
         [self sendMessageWithAddress:RHatJoysticktextField.stringValue XValue:rightJoystickSize.width andYValue:rightJoystickSize.height];
     }
