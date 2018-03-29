@@ -15,7 +15,7 @@
     leftJoystickSize = NSZeroSize;
     rightJoystickSize = NSZeroSize;
     joystickUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/60.0 target:self selector:@selector(updateJoysticks:) userInfo:nil repeats:YES];
-    sendJoysticksWithTimer = YES;
+    self.sendJoysticksWithTimer = YES;
 }
 
 - (void)dealloc
@@ -26,7 +26,7 @@
 
 - (void) updateJoysticks:(NSTimer *)timer
 {
-    if( sendJoysticksWithTimer )
+    if( self.sendJoysticksWithTimer )
     {
         if( fabs(leftJoystickSize.width) > 0.1 || fabs(leftJoystickSize.height) > 0.1 )
         {
@@ -317,7 +317,7 @@
 {
     float mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:-1 outMax:1];
     leftJoystickSize.width = mappedValue;
-    if( ! sendJoysticksWithTimer )
+    if( ! self.sendJoysticksWithTimer )
     {
         [self sendMessageWithAddress:LHatJoysticktextField.stringValue XValue:leftJoystickSize.width andYValue:leftJoystickSize.height];
     }
@@ -327,7 +327,7 @@
 {
     float mappedValue = [self map:value inMin:-65536 inMax:65536 outMin:1 outMax:-1];
     leftJoystickSize.height = mappedValue;
-    if( ! sendJoysticksWithTimer )
+    if( ! self.sendJoysticksWithTimer )
     {
         [self sendMessageWithAddress:LHatJoysticktextField.stringValue XValue:leftJoystickSize.width andYValue:leftJoystickSize.height];
     }
@@ -376,7 +376,7 @@
         default:
             break;
     }
-    if( shouldSendRightJoystick && ! sendJoysticksWithTimer )
+    if( shouldSendRightJoystick && ! self.sendJoysticksWithTimer )
     {
         [self sendMessageWithAddress:RHatJoysticktextField.stringValue XValue:rightJoystickSize.width andYValue:rightJoystickSize.height];
     }
