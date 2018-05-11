@@ -10,6 +10,15 @@
 #import <DDHidLib/DDHidLib.h>
 #import <VVOSC/VVOSC.h>
 
+#define BUTTON_1 7
+#define BUTTON_2 8
+#define BUTTON_3 9
+#define BUTTON_4 10
+#define BUTTON_5 11
+
+#define WHEEL 16
+#define DIAL 17
+
 #define SQUARE_BUTTON 0
 #define CROSS_BUTTON 1
 #define CIRCLE_BUTTON 2
@@ -39,83 +48,47 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 {
-    NSArray *joysticks;
+    NSArray *devices;
     OSCManager *oscManager;
     OSCOutPort *outPort;
     
+    DDHidDevice *hidDevice;
+    NSArray *hidElements;
+    
     IBOutlet NSPopUpButton *oscTargetPopUpButton;
-    IBOutlet NSTextField *triangleTextField;
-    IBOutlet NSTextField *circleTextField;
-    IBOutlet NSTextField *crossTextField;
-    IBOutlet NSTextField *squareTextField;
     
-    IBOutlet NSTextField *topTextField;
-    IBOutlet NSTextField *rightTextField;
-    IBOutlet NSTextField *bottomTextField;
-    IBOutlet NSTextField *leftTextField;
+    IBOutlet NSTextField *button1TextField;
+    IBOutlet NSTextField *button2TextField;
+    IBOutlet NSTextField *button3TextField;
+    IBOutlet NSTextField *button4TextField;
+    IBOutlet NSTextField *button5TextField;
+    IBOutlet NSTextField *wheelTextField;
+    IBOutlet NSTextField *dialTextField;
     
-    IBOutlet NSTextField *L1TextField;
-    IBOutlet NSTextField *L2TextField;
-    IBOutlet NSTextField *R1TextField;
-    IBOutlet NSTextField *R2TextField;
+    IBOutlet NSImageView *button1ImageView;
+    IBOutlet NSImageView *button2ImageView;
+    IBOutlet NSImageView *button3ImageView;
+    IBOutlet NSImageView *button4ImageView;
     
-    IBOutlet NSTextField *LeftHatButtonTextField;
-    IBOutlet NSTextField *RightHatButtonTextField;
-    
-    IBOutlet NSTextField *L2JoysticktextField;
-    IBOutlet NSTextField *R2JoysticktextField;
-    
-    IBOutlet NSTextField *LHatJoysticktextField;
-    IBOutlet NSTextField *RHatJoysticktextField;
-    IBOutlet NSTextField *JoystickSensivityTextField;
-    
-    IBOutlet NSImageView *outPortImageView;
-    
-    IBOutlet NSImageView *triangleImageView;
-    IBOutlet NSImageView *circleImageView;
-    IBOutlet NSImageView *crossImageView;
-    IBOutlet NSImageView *squareImageView;
-    
-    IBOutlet NSImageView *topImageView;
-    IBOutlet NSImageView *rightImageView;
-    IBOutlet NSImageView *bottomImageView;
-    IBOutlet NSImageView *leftImageView;
-    
-    IBOutlet NSImageView *L1ImageView;
-    IBOutlet NSImageView *L2tImageView;
-    IBOutlet NSImageView *R1ImageView;
-    IBOutlet NSImageView *R2ImageView;
-    
-    IBOutlet NSImageView *LeftHatButtonImageView;
-    IBOutlet NSImageView *RightHatButtonImageView;
-    
-    IBOutlet NSImageView *L2JoystickImageView;
-    IBOutlet NSImageView *R2JoystickImageView;
-    
-    IBOutlet NSImageView *LHatJoystickImageView;
-    IBOutlet NSImageView *RHatJoystickImageView;
+    IBOutlet NSImageView *button5ImageView;
+    IBOutlet NSImageView *wheelImageView;
+    IBOutlet NSImageView *dialImageView;
     
     IBOutlet NSButton *lockButton;
     
-    BOOL isTopPressed;
-    BOOL isLeftPressed;
-    BOOL isBottomPressed;
-    BOOL isRightPressed;
+    BOOL isButton1Pressed;
+    BOOL isButton2Pressed;
+    BOOL isButton3Pressed;
+    BOOL isButton4Pressed;
+    BOOL isButton5Pressed;
+    IBOutlet NSImageView *outPortImageView;
     
-    NSSize leftJoystickSize;
-    NSSize rightJoystickSize;
-    
-    NSTimer *joystickUpdateTimer;
+    long dialValue;
+    long wheelValue;
+    NSTimer *deviceUpdateTimer;
    
 }
 
 @property  BOOL sendJoysticksWithTimer;
-- (void) ddhidJoystick: (DDHidJoystick *)  joystick stick: (unsigned) stick xChanged: (int) value;
-- (void) ddhidJoystick: (DDHidJoystick *)  joystick stick: (unsigned) stick yChanged: (int) value;
-- (void) ddhidJoystick: (DDHidJoystick *) joystick stick: (unsigned) stick otherAxis: (unsigned) otherAxis valueChanged: (int) value;
-- (void) ddhidJoystick: (DDHidJoystick *) joystick buttonDown: (unsigned) buttonNumber;
-- (void) ddhidJoystick: (DDHidJoystick *) joystick buttonUp: (unsigned) buttonNumber;
-
-
 @end
 
