@@ -55,7 +55,7 @@
 
 /* Begin PBXFileReference section */
 		719935CC1DDA130700AEEC79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		71BAFA9C1DD8C0FF00CCE924 /* DualshockOSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DualshockOSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BAFA9C1DD8C0FF00CCE924 /* ShuttleOSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShuttleOSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BAFA9F1DD8C0FF00CCE924 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71BAFAA01DD8C0FF00CCE924 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		71BAFAA31DD8C0FF00CCE924 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		71BAFA9D1DD8C0FF00CCE924 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				71BAFA9C1DD8C0FF00CCE924 /* DualshockOSC.app */,
+				71BAFA9C1DD8C0FF00CCE924 /* ShuttleOSC.app */,
 				71BAFAAF1DD8C10000CCE924 /* DualshockOSCTests.xctest */,
 				71BAFABA1DD8C10000CCE924 /* DualshockOSCUITests.xctest */,
 			);
@@ -165,9 +165,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		71BAFA9B1DD8C0FF00CCE924 /* DualshockOSC */ = {
+		71BAFA9B1DD8C0FF00CCE924 /* ShuttleOSC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 71BAFAC31DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "DualshockOSC" */;
+			buildConfigurationList = 71BAFAC31DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "ShuttleOSC" */;
 			buildPhases = (
 				71BAFA981DD8C0FF00CCE924 /* Sources */,
 				71BAFA991DD8C0FF00CCE924 /* Frameworks */,
@@ -178,9 +178,9 @@
 			);
 			dependencies = (
 			);
-			name = DualshockOSC;
+			name = ShuttleOSC;
 			productName = Dualshock4HID;
-			productReference = 71BAFA9C1DD8C0FF00CCE924 /* DualshockOSC.app */;
+			productReference = 71BAFA9C1DD8C0FF00CCE924 /* ShuttleOSC.app */;
 			productType = "com.apple.product-type.application";
 		};
 		71BAFAAE1DD8C10000CCE924 /* DualshockOSCTests */ = {
@@ -244,7 +244,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 71BAFA971DD8C0FF00CCE924 /* Build configuration list for PBXProject "DualshockOSC" */;
+			buildConfigurationList = 71BAFA971DD8C0FF00CCE924 /* Build configuration list for PBXProject "ShuttleOSC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -257,7 +257,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				71BAFA9B1DD8C0FF00CCE924 /* DualshockOSC */,
+				71BAFA9B1DD8C0FF00CCE924 /* ShuttleOSC */,
 				71BAFAAE1DD8C10000CCE924 /* DualshockOSCTests */,
 				71BAFAB91DD8C10000CCE924 /* DualshockOSCUITests */,
 			);
@@ -321,12 +321,12 @@
 /* Begin PBXTargetDependency section */
 		71BAFAB11DD8C10000CCE924 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 71BAFA9B1DD8C0FF00CCE924 /* DualshockOSC */;
+			target = 71BAFA9B1DD8C0FF00CCE924 /* ShuttleOSC */;
 			targetProxy = 71BAFAB01DD8C10000CCE924 /* PBXContainerItemProxy */;
 		};
 		71BAFABC1DD8C10000CCE924 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 71BAFA9B1DD8C0FF00CCE924 /* DualshockOSC */;
+			target = 71BAFA9B1DD8C0FF00CCE924 /* ShuttleOSC */;
 			targetProxy = 71BAFABB1DD8C10000CCE924 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -515,7 +515,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		71BAFA971DD8C0FF00CCE924 /* Build configuration list for PBXProject "DualshockOSC" */ = {
+		71BAFA971DD8C0FF00CCE924 /* Build configuration list for PBXProject "ShuttleOSC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				71BAFAC11DD8C10000CCE924 /* Debug */,
@@ -524,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		71BAFAC31DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "DualshockOSC" */ = {
+		71BAFAC31DD8C10000CCE924 /* Build configuration list for PBXNativeTarget "ShuttleOSC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				71BAFAC41DD8C10000CCE924 /* Debug */,
