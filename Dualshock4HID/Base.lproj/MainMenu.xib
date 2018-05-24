@@ -699,22 +699,22 @@
             </items>
             <point key="canvasLocation" x="-275" y="288"/>
         </menu>
-        <window title="DualshockOSC" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="ShuttleOSC" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="561"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="371"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <value key="minSize" type="size" width="480" height="560"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="561"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="371"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <view fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Guy-52-kTS">
-                        <rect key="frame" x="2" y="42" width="475" height="478"/>
+                        <rect key="frame" x="2" y="20" width="475" height="310"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zDl-VR-J8v">
-                                <rect key="frame" x="37" y="406" width="401" height="22"/>
+                                <rect key="frame" x="37" y="238" width="401" height="22"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="lKo-WB-G8g">
                                     <font key="font" metaFont="system"/>
@@ -723,12 +723,12 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X7i-hr-m9T">
-                                <rect key="frame" x="446" y="286" width="16" height="16"/>
+                                <rect key="frame" x="446" y="118" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusNone" id="DRA-Ez-fTI"/>
                             </imageView>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9QR-bM-zBz">
-                                <rect key="frame" x="37" y="433" width="401" height="22"/>
+                                <rect key="frame" x="37" y="265" width="401" height="22"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="YRa-3h-ke5">
                                     <font key="font" metaFont="system"/>
@@ -737,12 +737,12 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UqN-fH-bbF">
-                                <rect key="frame" x="446" y="382" width="16" height="16"/>
+                                <rect key="frame" x="446" y="214" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusNone" id="f3v-ne-Oya"/>
                             </imageView>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SRd-mL-fKc">
-                                <rect key="frame" x="37" y="352" width="401" height="22"/>
+                                <rect key="frame" x="37" y="184" width="401" height="22"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="VvB-GW-mna">
                                     <font key="font" metaFont="system"/>
@@ -751,17 +751,17 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FEi-Ja-Mhq">
-                                <rect key="frame" x="446" y="259" width="16" height="16"/>
+                                <rect key="frame" x="446" y="91" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusNone" id="e7m-d4-Kye"/>
                             </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Av-n9-ath">
-                                <rect key="frame" x="446" y="436" width="16" height="16"/>
+                                <rect key="frame" x="446" y="268" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusNone" id="GLv-8n-5OP"/>
                             </imageView>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dr2-ZP-duE">
-                                <rect key="frame" x="37" y="283" width="401" height="22"/>
+                                <rect key="frame" x="37" y="115" width="401" height="22"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="TKg-97-eC7">
                                     <font key="font" metaFont="system"/>
@@ -770,12 +770,12 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00T-3y-R6l">
-                                <rect key="frame" x="13" y="286" width="16" height="16"/>
+                                <rect key="frame" x="13" y="118" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="right" id="sU1-E5-IXk"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="dial" id="sU1-E5-IXk"/>
                             </imageView>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NMN-zo-njy">
-                                <rect key="frame" x="37" y="379" width="401" height="22"/>
+                                <rect key="frame" x="37" y="211" width="401" height="22"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="7fx-bV-V9E">
                                     <font key="font" metaFont="system"/>
@@ -784,7 +784,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nOB-e8-Yl1">
-                                <rect key="frame" x="37" y="256" width="401" height="22"/>
+                                <rect key="frame" x="37" y="88" width="401" height="22"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="xpl-Sy-Ros">
                                     <font key="font" metaFont="system"/>
@@ -793,47 +793,47 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eKh-EQ-gS2">
-                                <rect key="frame" x="13" y="382" width="16" height="16"/>
+                                <rect key="frame" x="13" y="214" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="cross" id="2zw-AW-QEl"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="three" id="2zw-AW-QEl"/>
                             </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shu-YP-fWm">
-                                <rect key="frame" x="13" y="259" width="16" height="16"/>
+                                <rect key="frame" x="13" y="91" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="bottom" id="Yrt-F6-ncY"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="throttle" id="Yrt-F6-ncY"/>
                             </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yLG-D9-10e">
-                                <rect key="frame" x="13" y="409" width="16" height="16"/>
+                                <rect key="frame" x="13" y="241" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="circle" id="vyV-Pe-BZW"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="two" id="vyV-Pe-BZW"/>
                             </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZsH-2N-mFB">
-                                <rect key="frame" x="13" y="436" width="16" height="16"/>
+                                <rect key="frame" x="13" y="268" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="triangle" id="8yi-nL-AGg"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="one" id="8yi-nL-AGg"/>
                             </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0LI-0J-hbK">
-                                <rect key="frame" x="13" y="355" width="16" height="16"/>
+                                <rect key="frame" x="13" y="187" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="square" id="5TR-vL-soO"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="four" id="5TR-vL-soO"/>
                             </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="deg-Kp-ek3">
-                                <rect key="frame" x="446" y="409" width="16" height="16"/>
+                                <rect key="frame" x="446" y="241" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusNone" id="jsh-87-L6Z"/>
                             </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0D1-jH-ORC">
-                                <rect key="frame" x="446" y="355" width="16" height="16"/>
+                                <rect key="frame" x="446" y="187" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusNone" id="OCc-9f-fTB"/>
                             </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHT-Xk-0eu">
-                                <rect key="frame" x="13" y="328" width="16" height="16"/>
+                                <rect key="frame" x="13" y="160" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="top" id="o9Z-kI-Kl7"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="five" id="o9Z-kI-Kl7"/>
                             </imageView>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="llj-Ya-Ej1">
-                                <rect key="frame" x="37" y="325" width="401" height="22"/>
+                                <rect key="frame" x="37" y="157" width="401" height="22"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="OKe-l1-e4p">
                                     <font key="font" metaFont="system"/>
@@ -842,12 +842,12 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BXP-b5-Fh2">
-                                <rect key="frame" x="446" y="328" width="16" height="16"/>
+                                <rect key="frame" x="446" y="160" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusNone" id="G1T-KF-OIU"/>
                             </imageView>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P0A-jf-wtz">
-                                <rect key="frame" x="35" y="202" width="181" height="18"/>
+                                <rect key="frame" x="35" y="34" width="181" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="send throttle continuously" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="f1c-jf-rKC">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -858,7 +858,7 @@
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ow-Dd-Mzo">
-                                <rect key="frame" x="158" y="174" width="56" height="22"/>
+                                <rect key="frame" x="158" y="6" width="56" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="L39-xx-jPQ">
                                     <font key="font" metaFont="system"/>
@@ -867,7 +867,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL8-zj-icJ">
-                                <rect key="frame" x="35" y="177" width="121" height="17"/>
+                                <rect key="frame" x="35" y="9" width="121" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="throttle sensitivity :" id="Rbs-eO-hhj">
                                     <font key="font" metaFont="system"/>
@@ -878,7 +878,7 @@
                         </subviews>
                     </view>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JjH-kb-ZvL">
-                        <rect key="frame" x="18" y="524" width="72" height="17"/>
+                        <rect key="frame" x="18" y="334" width="72" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="OSC target" id="udD-bX-sls">
                             <font key="font" metaFont="system"/>
@@ -887,7 +887,7 @@
                         </textFieldCell>
                     </textField>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h0i-Yd-pEs">
-                        <rect key="frame" x="101" y="518" width="195" height="26"/>
+                        <rect key="frame" x="101" y="328" width="195" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="2G1-WH-DSd" id="D8V-Vh-eZc">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -905,12 +905,12 @@
                         </connections>
                     </popUpButton>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qh4-kK-Rng">
-                        <rect key="frame" x="301" y="524" width="16" height="16"/>
+                        <rect key="frame" x="301" y="334" width="16" height="16"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusUnavailable" id="4ib-dH-Ivl"/>
                     </imageView>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vqy-rz-l3y">
-                        <rect key="frame" x="425" y="508" width="48" height="48"/>
+                        <rect key="frame" x="425" y="318" width="48" height="48"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="unlock" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="qA6-jV-UvO">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -922,20 +922,20 @@
                     </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="-682" y="-201.5"/>
+            <point key="canvasLocation" x="-682" y="-296.5"/>
         </window>
         <userDefaultsController representsSharedInstance="YES" id="y2k-O1-VQP"/>
     </objects>
     <resources>
         <image name="NSStatusNone" width="16" height="16"/>
         <image name="NSStatusUnavailable" width="16" height="16"/>
-        <image name="bottom" width="50" height="50"/>
-        <image name="circle" width="37.5" height="37.5"/>
-        <image name="cross" width="37.5" height="37.5"/>
-        <image name="right" width="50" height="50"/>
-        <image name="square" width="37.5" height="37.5"/>
-        <image name="top" width="50" height="50"/>
-        <image name="triangle" width="37.5" height="37.5"/>
+        <image name="dial" width="32" height="32"/>
+        <image name="five" width="32" height="38"/>
+        <image name="four" width="32" height="38"/>
+        <image name="one" width="32" height="38"/>
+        <image name="three" width="32" height="38"/>
+        <image name="throttle" width="32" height="32"/>
+        <image name="two" width="32" height="38"/>
         <image name="unlock" width="200" height="200"/>
     </resources>
 </document>
