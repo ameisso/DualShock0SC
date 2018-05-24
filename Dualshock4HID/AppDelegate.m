@@ -60,7 +60,7 @@
         else if( element.cookie == WHEEL && wheelValue != [hidDevice getElementValue:element] )
         {
             wheelValue = [hidDevice getElementValue:element];
-            [self sendMessageWithAddress:wheelTextField.stringValue andValue:(int)wheelValue];
+            [self sendMessageWithAddress:wheelTextField.stringValue andFloatValue:wheelValue/7.0*wheelSensivityTextField.floatValue];
             [wheelImageView setImage:self.pressedImage];
         }
         else if( element.cookie == WHEEL && wheelValue == [hidDevice getElementValue:element] )
@@ -78,9 +78,9 @@
             [dialImageView setImage:self.releasedImage];
         }
     }
-    if( self.sendJoysticksWithTimer )
+    if( self.sendWheelWithTimer )
     {
-        [self sendMessageWithAddress:wheelTextField.stringValue andValue:wheelValue];
+        [self sendMessageWithAddress:wheelTextField.stringValue andFloatValue:wheelValue/7.0*wheelSensivityTextField.floatValue];
         [self sendMessageWithAddress:dialTextField.stringValue andValue:dialValue];
     }
 }
@@ -282,8 +282,8 @@
     [[NSUserDefaults standardUserDefaults] setObject:wheelTextField.stringValue forKey:@"wheelField"];
     
     
-    //    [[NSUserDefaults standardUserDefaults] setObject:@(_sendJoysticksWithTimer) forKey:@"sendJoysticksWithTimer"];
-    //    [[NSUserDefaults standardUserDefaults] setObject:@(JoystickSensivityTextField.floatValue) forKey:@"joystickSensivity"];
+    [[NSUserDefaults standardUserDefaults] setObject:@(_sendWheelWithTimer) forKey:@"sendWheelWithTimer"];
+    [[NSUserDefaults standardUserDefaults] setObject:@(wheelSensivityTextField.floatValue) forKey:@"wheelSensivity"];
     
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
@@ -299,8 +299,8 @@
     dialTextField.stringValue = [[NSUserDefaults standardUserDefaults] stringForKey:@"dialField"];
     wheelTextField.stringValue = [[NSUserDefaults standardUserDefaults] stringForKey:@"wheelField"];
     
-    //    self.sendJoysticksWithTimer =  [[[NSUserDefaults standardUserDefaults] objectForKey:@"sendJoysticksWithTimer"] boolValue];
-    //    JoystickSensivityTextField.floatValue = [[[NSUserDefaults standardUserDefaults] objectForKey:@"joystickSensivity"] floatValue];
+    self.sendWheelWithTimer =  [[[NSUserDefaults standardUserDefaults] objectForKey:@"sendWheelWithTimer"] boolValue];
+    wheelSensivityTextField.floatValue = [[[NSUserDefaults standardUserDefaults] objectForKey:@"wheelSensivity"] floatValue];
 }
 
 

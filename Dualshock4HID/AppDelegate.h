@@ -64,6 +64,7 @@
     IBOutlet NSTextField *button5TextField;
     IBOutlet NSTextField *wheelTextField;
     IBOutlet NSTextField *dialTextField;
+    IBOutlet NSTextField *wheelSensivityTextField;
     
     IBOutlet NSImageView *button1ImageView;
     IBOutlet NSImageView *button2ImageView;
@@ -86,9 +87,10 @@
     long dialValue;
     long wheelValue;
     NSTimer *deviceUpdateTimer;
+    float throttleSensivity;
    
 }
 
-@property  BOOL sendJoysticksWithTimer;
+@property  BOOL sendWheelWithTimer;
 @end
 
